@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+  <div class="panel-body small-padding">
+    <img class="slide-img" src="http://via.placeholder.com/320x150" alt="" />
+    <dl class="dl-horizontal info-list">
+      <dt>
+        <a href="#">{{ book.bookName }}</a>
+      </dt>
+      <dd>{{ book.price | currency:'CNY':'symbol-narrow':'1.2-2'  }}</dd>
+    </dl>
+    <p class="info-list">{{ book.des }}</p>
+    <!-- star start -->
+    <app-star [level]="book.level"></app-star>
+    <!-- star end -->
+  </div>
+</div>

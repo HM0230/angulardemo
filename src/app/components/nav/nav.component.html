@@ -1,0 +1,16 @@
+<!-- bar start -->
+<div class="navbar navbar-inverse clearbar">
+  <div class="row">
+    <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+      <ul class="list-unstyled list-inline clear-list">
+        <li>
+          <img src="assets/img/logo.png"/>
+        </li>
+        <li routerLink="/book" [class.list-title]="choose=='book'" (click)="choose = 'book'">在线书城</li>
+        <li routerLink="/about" [class.list-title]="choose=='about'" (click)="choose = 'about'">关于我们</li>
+        <li routerLink="/telAbout" [class.list-title]="choose=='telAbout'" (click)="choose = 'telAbout'">联系我们</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- bar end -->
